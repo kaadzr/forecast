@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ForecastSberTest</string>
+    <!-- menu labels -->
+    <string name="menu_item_label_locate">Locate</string>
+    <string name="menu_item_label_refresh">Refresh</string>
+    <string name="menu_item_label_search">Search</string>
+
+    <!-- weather patterns -->
+    <string name="current_temperature">%1$.2f\u2103</string>
+    <string name="min_temperature">min: %1$.2f\u2103</string>
+    <string name="max_temperature">max: %1$.2f\u2103</string>
+    <string name="pressure">pressure: %1$dhPa</string>
+    <string name="humidity">humidity: %1$d%%</string>
+    <string name="cached">Cached forecast(%1$s)</string>
+
+    <!-- buttons -->
+    <string name="retry_action">Retry</string>
+
+    <!-- errors -->
+    <string name="error_location_forbidden">Haven\'t got a permission to request locations</string>
+    <string name="error_location_request">Unable to get device location</string>
+    <string name="error_forecast_request_failed">Forecast request failed</string>
+    <string name="error_forecast_not_found">Unable to get a forecast for the location</string>
+
+    <!-- widget -->
+    <string name="error_have_no_saved_forecasts">No saved forecasts</string>
+</resources>

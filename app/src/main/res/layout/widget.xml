@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/weatherIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            tools:src="@drawable/ic_weather_sunny" />
+
+        <TextView
+            android:id="@+id/temperatureLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="8dp"
+            android:textSize="24sp"
+            tools:text="26 C" />
+    </LinearLayout>
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/error_have_no_saved_forecasts" />
+</FrameLayout>
